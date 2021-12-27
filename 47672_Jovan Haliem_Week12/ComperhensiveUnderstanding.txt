@@ -1,0 +1,13 @@
+1. Jelaskan apa itu service? apa yang membedakannya dengan sebuah class?
+2. Jelaskan apa itu urutan dalam melakukan routing?
+
+Jawaban:
+1. Service adalah istilah luas yang mencakup nilai, operasi, dan fitur yang dibutuhkan aplikasi. 
+Service yang mempermudah pemrogram untuk membuat kode dengan menghilangkan kebutuhan akan fungsi, nilai, atau fitur. 
+Meskipun telah ditulis berkali-kali, sekarang dapat disuntikkan melalui service.
+Untuk selanjutnya, kelas dapat dibandingkan dengan cetak biru. Untuk membuat objek dengan atribut dan fungsi tertentu
+
+2. Routing adalah mekanisme pengiriman data ke lokasi tertentu.
+Urutan melakukan routing:
+1. Di app.routing.module.ts, impor komponen dan tambahkan jalur dan komponen ke Routes.
+2. Pada anchor yang sudah di generate di html, ketik routerLink routerLink adalah alat navigasi.

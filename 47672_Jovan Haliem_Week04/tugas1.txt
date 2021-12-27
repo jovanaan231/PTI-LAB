@@ -1,0 +1,7 @@
+Jelaskan apa perbedaan const, let, dan var secara lengkap.
+
+Jawaban:
+
+- const adalah sebuah variable yang memiliki yang nilai tetap, atau bersifat tidak dapat di ubah, tidak dapat dideklarasikan ulang dan biasanya const digunakan untuk objek.
+- Let adalah sebuah variable yang memiliki nilai yang dapat diubah dan let ini tidak dapat dideklarasikan ulang.
+- var adalah sebuah variable yang bersifat global yang dimana nilainya dapat diubah kapanpun dan var juga bersifat hoisting dan dapat dideklarasikan ulang.

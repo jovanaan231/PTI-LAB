@@ -1,0 +1,201 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script  type="text/javascript" src="app.js"></script>
+    <script>
+    	$(document).ready(() => {
+    		app.ready();
+    	})
+    </script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-static-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<span>Photoo Phooo</span>
+			</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-ex-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Our Greatest Works</a></li>
+				<li><a href="#">Our Greatest Works</a></li>
+			</ul>
+			</div>
+	</div>
+	<div class="cover applicationHeader"> 
+		<div class="container">
+			<div class="row"> 
+				<div class="col-md-12 text-center">
+					<img id="image" src="images/photophoo.jpg" width="100%" class="img-responsive"> 
+					<h1 id="name">Photo Phoo</h1> 
+					<p id="desc">You don't take a photograph, you make it!</p><br><br>
+					<a class="btn btn-info btn-lg">Know Us Better</a> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr/>
+	<div class="aboutUs">
+		<div class="section"> 
+			<div class="container"> 
+				<div class="row"> 
+					<div class="col-md-4"> 
+						<img id="image-1" src="images/photography1.jpg" class="img-responsive"> 
+					</div>
+					<div class="col-md-8"> 
+						<h1 id="title-1">What is Photo Phoo?</h1> 
+						<h3 id="subtitle-1" >You don't take a photograph, you make it!</h3> 
+						<p id="desc-1">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr/>
+		<div class="section"> 
+			<div class="container"> 
+				<div class="row"> 
+					<div class="col-md-8"> 
+						<h1 id="title-2">Why Photo Phoo</h1> 
+						<h3 id="subtitle-2">Photo Phoo is da Best!</h3> 
+						<p id="desc-2">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel.
+						</p>
+					</div>
+					<div class="col-md-4"> 
+						<img id="image-2" src="images/photography2.jpg" class="img-responsive"> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr/>
+	<div id="fullcarousel-example" data-interval="false" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner ourWorks">
+			<div class="item singleSlider">
+				<img id="image" src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png">
+				<div class="carousel-caption">
+					<h2 id="title">Title</h2>
+					<p id="desc">Description</p>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#fullcarousel-example" data-slide="prev">
+			<i class="icon-prev fa fa-angle-left"></i>
+		</a>
+		<a class="right carousel-control" href="#fullcarousel-example" data-slide="next">
+			<i class="icon-next fa fa-angle-right"></i>
+		</a>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div align="center">
+			  		<img class="mySlides" src="images/result1.jpg" style="width:100%; height:600px;">
+			  		<img class="mySlides" src="images/result2.jpg" style="width:100%; height:600px;">
+			  		<img class="mySlides" src="images/result3.jpg" style="width:100%; height:600px;">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-center">Team</h1>
+					<p class="text-center">We are a group of skilled individuals.</p>
+				</div>
+			</div>
+			<div class="row developers"> 
+				<div class="col-md-4 singleDeveloper">
+					<img id="image" alt="thomas" src="images/thomas.jpg" class="center-block img-circle img-responsive">
+					<h3 id="name" class="text-center">Thomas Airell</h3>
+					<p id="job" class="text-center">Programmer</p>
+				</div>
+				<div class="col-md-4 singleDeveloper">
+					<img id="image" alt="thomas" src="images/thomas.jpg" class="center-block img-circle img-responsive">
+					<h3 id="name" class="text-center">Airell Thomas</h3>
+					<p id="job" class="text-center">Web Designer</p>
+				</div>
+				<div class="col-md-4 singleDeveloper">
+					<img id="image" alt="thomas" src="images/thomas.jpg" class="center-block img-circle img-responsive">
+					<h3 id="name" class="text-center">Lleria Samoht</h3>
+					<p id="job" class="text-center">UI/UX Designer</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr/>
+	<div class="section"> 
+		<div class="container"> 
+			<div class="row"> 
+				<div class="col-md-12"> 
+					<h1 class="text-center">Our Partners</h1>
+				</div>
+			</div>
+			<div class="row ourPartners">
+				<div class="col-md-4 singlePartner"> 
+					<img id="image" style="height:200px;" src="images/companyLogo/adventure.png" class="center-block img-circle img-responsive">
+					<h3 id="name" align="center">Adventure Inc.</h3>
+					<p id="desc" align="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+				</div>
+				<div class="col-md-4 singlePartner"> 
+					<img id="image" style="height:200px;" src="images/companyLogo/buildomo.png" class="center-block img-circle img-responsive">
+					<h3 id="name" align="center">Buildomo</h3>
+					<p id="desc" align="center">Lorem ipsum dolor sit amet, consectetur adipisici elit.</p>
+				</div>
+				<div class="col-md-4 singlePartner"> 
+					<img id="image" style="height:200px;" src="images/companyLogo/coop.png" class="center-block img-circle img-responsive">
+					<h3 id="name" align="center">COOP</h3>
+					<p id="desc" align="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+				</div>
+				<div class="col-md-4 singlePartner"> 
+					<img id="image" style="height:200px;" src="images/companyLogo/nexus.jpg" class="center-block img-circle img-responsive">
+					<h3 id="name" align="center">Nexus</h3>
+					<p id="desc" align="center">Lorem ipsum dolor sit amet, consectetur adipisici elit.</p>
+				</div>
+				<div class="col-md-4 singlePartner"> 
+					<img id="image" style="height:200px;" src="images/companyLogo/noah.png" class="center-block img-circle img-responsive">
+					<h3 id="name" align="center">NOAH</h3>
+					<p id="desc" align="center">Lorem ipsum dolor sit amet, consectetur adipisici elit.</p>
+				</div>
+				<div class="col-md-4 singlePartner"> 
+					<img id="image" style="height:200px;" src="images/companyLogo/smith.png" class="center-block img-circle img-responsive">
+					<h3 id="name" align="center">Smith Electric</h3>
+					<p id="desc" align="center">Lorem ipsum dolor sit amet, consectetur adipisici elit.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var myIndex = 0;
+		carousel();
+	
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 2000);
+		}
+	</script>
+</body>
+</html>

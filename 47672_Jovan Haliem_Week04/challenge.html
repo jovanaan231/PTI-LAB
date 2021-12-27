@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Challange Lab</title>
+      <link rel="stylesheet" type="text/css" href="main1.css" media="screen" title="no title" charset="utf-8">
+      <script>
+        var heroLevel = 1;
+        var heroMember = 0;
+
+        function onDocumentFinish() {
+          let heroName = prompt("Hero, what is your name?");
+
+          const nameElement = document.getElementById("hero-name");
+          const levelElement = document.getElementById("hero-level");
+          const memberElement = document.getElementById("hero-member");
+
+          nameElement.innerText = nameElement.innerText+heroName;
+          levelElement.innerText = levelElement.innerText+heroLevel;
+          memberElement.innerText = memberElement.innerText+heroMember;
+
+          console.log(`Hero ${heroName} is ready for an adventure`);
+        }
+
+        function submitItem(event) {
+          event.preventDefault();
+
+          const nameElement = document.getElementById("member-name");
+          const levelElement = document.getElementById("member-level");
+          const classElement = document.getElementById("member-class");
+          const memberElement = document.getElementById("hero-member");
+          const nameValue = nameElement.value;
+          const levelValue = levelElement.value;
+          const classValue = classElement.value;
+
+          if (levelValue > heroLevel) {
+            alert("Your level need to be higher than your recruits!");
+            console.log(`You failed to recruit a LV.${levelValue} ${nameValue}`);
+            return;
+          }
+
+          const tableElement = document.querySelector("#tableItem tbody");
+          tableElement.innerHTML += `
+            <tr>
+              <td>${nameValue}</td>
+              <td>${levelValue}</td>
+              <td>${classValue}</td>
+            </tr>
+          `;
+
+          console.log(`${nameValue} a LV.${levelValue} ${classValue} is recruited`);
+          heroMember=heroMember+1;
+          memberElement.innerText = `Recruits: ${heroMember}`;
+        }
+
+        function levelUp() {
+          const levelElement = document.getElementById("hero-level");
+          heroLevel=heroLevel+1;
+          levelElement.innerText = `Level: ${heroLevel}`;
+          console.log("The hero's level is increased by 1");
+        }
+
+      </script>
+    </head>
+
+    <body onload="onDocumentFinish()">
+      <div class="col-12">
+        <div class="col-12 header">
+          <h1 id="hero-name" class="hero-info">Name:&nbsp;</h1>
+          <h1 id="hero-level" class="hero-info">Level:&nbsp;</h1>
+          <h1 id="hero-member" class="hero-info">Recruits:&nbsp;</h1>
+        </div>
+
+        <div class="col-12">
+          <div class="btn-container">
+            <button onclick="levelUp()">Training</button>
+          </div>
+        </div>
+
+        <div class="col-4"></div>
+        <div class="col-4 center">
+          <div class="col-12">
+            <form id="formSubmit" onsubmit="submitItem(event)">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="member-name" />
+              <label for="level">Level</label>
+              <input type="number" name="level" id="member-level" />
+              <label for="class">Class</label>
+              <select name="class" id="member-class">
+                <option value="Swordman">Swordman</option>
+                <option value="Paladin">Paladin</option>
+                <option value="Archer">Archer</option>
+                <option value="Thief">Thief</option>
+                <option value="Magician">Magician</option>
+                <option value="Summoner">Summoner</option>
+                <option value="Warlock">Warlock</option>
+                <option value="Bard">Bard</option>
+              </select>
+              <div class="btn-container">
+                <button type="recruit" id="btnSubmit" value="Submit">Recruit</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-12">
+            <table id="tableItem" class="col-12">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Level</th>
+                  <th>Class</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <div class="col-12 footer">
+          <footer><h1>Created By Jovan Haliem - 00000047672</h1></footer>
+        </div>
+
+      </div>
+    </body>
+  </html>

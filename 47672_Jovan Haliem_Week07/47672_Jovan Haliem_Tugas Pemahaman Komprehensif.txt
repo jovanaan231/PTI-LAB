@@ -1,0 +1,89 @@
+Tugas Pemahaman Komprehensif
+1. Sebut dan jelaskan kelemahan serta kelebihan jquery jika dibandingkan oleh vanilla js!
+Semakin banyak semakin baik!
+2. Buatlah sebuah fungsi untuk melakukan REQUEST dengan method “POST” yang mengirimkan
+data json dengan format {nama:’Budi’, alamat:’Jl Merpati’, pekerjaan:’Programmer’} ke url
+‘www.budi.com/info-diri’!
+3. Apakah yang dimaksud dengan ‘callback function’?
+4. Sebut dan berikan contoh implementasi dari fungsi-fungsi jquery berikut jika dibutuhkan !
+a. .children()
+b. $(‘.budi’).html() dan $(‘#wati’).val()
+c. .fadeIn() dan .fadeOut()
+d. .promise() 
+
+Jawaban:
+
+1.
+Kelebihan jQuery:
+- Sangat Simple
+- Mudah Digunakan
+
+2.
+jQuery POST: $.post(URL,data,callback);
+$("button").click(function(){
+    $.post("http://www.budi.com/info-diri", {
+        nama: "Budi",
+        alamat: "Jl Merpati",
+        pekerjaan: "Programmer"
+    });
+});
+
+
+
+3.Callback function: fungsi yang diteruskan sebagai argumen ke fungsi lain.
+
+
+4.
+a. 
+.children() digunakan untuk mengembalikan semua anak langsung dari elemen yang dipilih.
+
+<body class="descendants">body (great-grandparent)
+  <div style="width:500px;">div (grandparent)
+    <ul>ul (direct parent)  
+      <li>li (child)
+        <span>span (grandchild)</span>
+      </li>  
+      <li>li (child)
+        <span>span (grandchild)</span>
+      </li>
+    </ul>   
+  </div>
+</body>
+
+
+
+b.
+.html() digunakan untuk mengambil seluruh isi elemen html dari selector.
+
+$("body").html()
+<button>Change content of all p elements</button>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>`
+
+<body>
+<button>Change content of all p elements</button>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+</body>
+
+
+c.
+.fadeIn() atau .fadeOut(): dibuat menggunakan jQuery yang dimana ini akan memberi efek ke suatu tag Element untuk menmunculkan.
+
+$("button").click(function(){
+    $("p").fadeOut();
+});
+
+$("button").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
+});
+
+
+d.
+.promise() yaitu proxy untuk nilai yang belum tentu diketahui saat janji dibuat. Ini memungkinkan Anda untuk mengaitkan penangan dengan nilai keberhasilan atau alasan kegagalan tindakan asinkron.
+
+$( "div" ).promise().done(function() {
+    $( "p" ).append( " Finished! " );
+});

@@ -1,0 +1,30 @@
+1. Jelaskan grid system yang diterapkan oleh Bootstrap!
+2. Sebutkan Bootstrap component lainnya yang tersedia dan penjelasan singkat kegunaan
+masing-masing component tersebut (10 komponen)!
+3. Sebutkan dan jelaskan 5 fungsionalitas Javascript yang telah disediakan oleh Bootstrap selain
+Modal!
+
+Jawaban:
+1. grid system adalah sebuah sistem yang menggunakan container, rows, dan columns untuk mengatur kontennya. 
+Sistem grid ini ditulis dalam Flebox dan sepenuhnya responsif. Hasilnya, programmer dapat menggunakan sistem grid ini untuk membuat web 
+lebih mudah diatur dan responsif.
+
+2.
+1. Form adalah komponen yang paling penting pada sebuah website. apabila tidak ada form pada sebuah website, akan terlihat kurang maksimal.
+2. Dropdowns adalah menu overlay kontekstual yang dapat dialihkan untuk menampilkan daftar tautan dan banyak lagi.
+3. List Group adalah komponen yang telah disediakan oleh bootstrap untuk membuat list.
+4. Pagination adalah komponen website yang terdiri dari penomoran halaman web.
+5. Input Group adalah menggabungkan elemen form ketika menginput data (misalnya sudah terdapat +62 ketika ingin mendaftarkan nomor telepon)
+6. Card adalah komponen untuk membuat kartu seperti: memasukkan gambar dan deskripsinya.
+7. Buttons adalah sebuah tombol yang sering digunakan untuk halaman login atau form.
+8. Navbar adalah komponen website yang berupa menu.
+9. Media Object adalah komponen bootstrap untuk membuat komentar blog, tweet, dan lainnya.
+10. Jumbotron adalah komponen yang disediakan bootstrap untuk menampilkan konten yang diunggulkan pada sebuah website.
+
+3.
+1. Alert adalah memberi serta menampilkan notifikasi pesan kepada user.
+2. Transition adalah komponen yang memberikan efek transisi di dalam CSS.
+3. Collapse adalah komponen yang digunakan untuk menampilkan suatu konten serta menyembunyikannya
+4. Scrollspy adalah sebuah komponen yang bisa mengubah atau mengupdate menu navigasi bootstrap untuk menunjukkan komponen link yang aktif.
+5. Carousel adalah komponen yang berbentuk slider yang digunakan untuk membuat slideshow yang menampilkan gambar dan text.
+
